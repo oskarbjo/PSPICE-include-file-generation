@@ -1,0 +1,96 @@
+*.model Didl	D(Is=0.1p Rs=7.7 CJO=2p Tt=1n Bv=100000 Ibv=0.1p)
+*
+.model Didl	D(Is=0.1p Rs=1m CJO=2p Tt=1n Bv={BV} Ibv=0.1p)
+*
+* D1N965A DIODE WITH BREAKDOWN VOLTAGE SET AT 15V-5%
+.model D1N965A-5%  D(Is=3.142f Rs=3.536 Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=80.5p M=.4186
++		Vj=.75 Fc=.5 Isr=1.527n Nr=2 Bv=14.25 Ibv=24.573m Nbv=1.0932
++		Ibvl=7.1249u Nbvl=.65646 Tbv1=833.33u)
+*		Motorola	pid=1N965A	case=DO-35
+*		89-9-18 gjg
+*		Vz = 15V-5% @ 8.5mA, Zz = 32 @ 1mA, Zz = 8.25 @ 5mA, Zz = 5.75 @ 20mA
+
+*$
+* D1N5246 DIODE WITH BREAKDOWN VOLTAGE SET AT 16V-2%
+.model D1N5246_2Plow	D( Is=5.461f Rs=4.975 Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=69p M=.4472 
++ Vj=.75 Fc=.5 Isr=1.371n Nr=2 Bv=15.68 Ibv=32.07m Nbv=1.0589 Ibvl=44.191u 
++ Nbvl=.86786 Tbv1=875u) 
+*		Motorola	pid=1N5246	case=DO-35
+*		89-9-18 gjg
+*		Vz = 16 @ 7.8mA, Zz = 32.5 @ 1mA, Zz = 9.8 @ 5mA, Zz = 6.9 @ 20mA
+*$
+* D1N5246 DIODE WITH BREAKDOWN VOLTAGE SET AT 16V+2%
+.model D1N5246_2Phigh	D( Is=5.461f Rs=4.975 Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=69p M=.4472 
++ Vj=.75 Fc=.5 Isr=1.371n Nr=2 Bv=16.32 Ibv=32.07m Nbv=1.0589 Ibvl=44.191u 
++ Nbvl=.86786 Tbv1=875u) 
+*		Motorola	pid=1N5246	case=DO-35
+*		89-9-18 gjg
+*		Vz = 16 @ 7.8mA, Zz = 32.5 @ 1mA, Zz = 9.8 @ 5mA, Zz = 6.9 @ 20mA
+*$
+* D1N5251 DIODE WITH BREAKDOWN VOLTAGE SET AT 22V-2%
+.model D1N5251_2Plow	D(Is=17.49f Rs=7.976 Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=50p M=.4141
++		Vj=.75 Fc=.5 Isr=1.33n Nr=2 Bv=21.56 Ibv=20.578m Nbv=1.315
++		Ibvl=207.85u Nbvl=1.315 Tbv1=840.91u)
+*		Motorola	pid=1N5251	case=DO-35
+*		89-9-18 gjg
+*		Vz = 22 @ 5.6mA, Zz = 42 @ 1mA, Zz = 15 @ 5mA, Zz = 9.5 @ 20mA
+*$
+* D1N5251 DIODE WITH BREAKDOWN VOLTAGE SET AT 22V+2%
+.model D1N5251_2Phigh	D(Is=17.49f Rs=7.976 Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=50p M=.4141
++		Vj=.75 Fc=.5 Isr=1.33n Nr=2 Bv=22.44 Ibv=20.578m Nbv=1.315
++		Ibvl=207.85u Nbvl=1.315 Tbv1=840.91u)
+*		Motorola	pid=1N5251	case=DO-35
+*		89-9-18 gjg
+*		Vz = 22 @ 5.6mA, Zz = 42 @ 1mA, Zz = 15 @ 5mA, Zz = 9.5 @ 20mA
+*$
+* D1N5251 DIODE WITH BREAKDOWN VOLTAGE SET AT 22V-1%
+.model D1N5251_1Plow	D(Is=17.49f Rs=7.976 Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=50p M=.4141
++		Vj=.75 Fc=.5 Isr=1.33n Nr=2 Bv=21.78 Ibv=20.578m Nbv=1.315
++		Ibvl=207.85u Nbvl=1.315 Tbv1=840.91u)
+*		Motorola	pid=1N5251	case=DO-35
+*		89-9-18 gjg
+*		Vz = 22 @ 5.6mA, Zz = 42 @ 1mA, Zz = 15 @ 5mA, Zz = 9.5 @ 20mA
+*$
+* D1N5251 DIODE WITH BREAKDOWN VOLTAGE SET AT 22V+1%
+.model D1N5251_1Phigh	D(Is=17.49f Rs=7.976 Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=50p M=.4141
++		Vj=.75 Fc=.5 Isr=1.33n Nr=2 Bv=22.22 Ibv=20.578m Nbv=1.315
++		Ibvl=207.85u Nbvl=1.315 Tbv1=840.91u)
+*		Motorola	pid=1N5251	case=DO-35
+*		89-9-18 gjg
+*		Vz = 22 @ 5.6mA, Zz = 42 @ 1mA, Zz = 15 @ 5mA, Zz = 9.5 @ 20mA
+*$
+* D1N5251 DIODE WITH BREAKDOWN VOLTAGE SET AT 22V-5%
+.model D1N5251_5Plow	D(Is=17.49f Rs=7.976 Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=50p M=.4141
++		Vj=.75 Fc=.5 Isr=1.33n Nr=2 Bv=20.9 Ibv=20.578m Nbv=1.315
++		Ibvl=207.85u Nbvl=1.315 Tbv1=840.91u)
+*		Motorola	pid=1N5251	case=DO-35
+*		89-9-18 gjg
+*		Vz = 22 @ 5.6mA, Zz = 42 @ 1mA, Zz = 15 @ 5mA, Zz = 9.5 @ 20mA
+*$
+* D1N5251 DIODE WITH BREAKDOWN VOLTAGE SET AT 22V+5%
+.model D1N5251_5Phigh	D(Is=17.49f Rs=7.976 Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=50p M=.4141
++		Vj=.75 Fc=.5 Isr=1.33n Nr=2 Bv=23.1 Ibv=20.578m Nbv=1.315
++		Ibvl=207.85u Nbvl=1.315 Tbv1=840.91u)
+*		Motorola	pid=1N5251	case=DO-35
+*		89-9-18 gjg
+*		Vz = 22 @ 5.6mA, Zz = 42 @ 1mA, Zz = 15 @ 5mA, Zz = 9.5 @ 20mA
+*$
+* FAIRCHILD: ES1B - 1.0A Ultra Fast Recovery Rectifier
+* -----------------------------------------------
+.MODEL  D_ES1B  D
++ IS = 8.392E-08
++ RS = 5.938E-02
++ N = 1.868
++ XTI = 3.0
++ EG = 1.110 
++ CJO = 9.23E-12
++ M = 0.06912
++ VJ = 0.3905
++ FC = 0.5
++ ISR = 6.278E-08
++ NR = 2.124
++ BV = 100
++ IBV = 1.0E-03
+
+
+

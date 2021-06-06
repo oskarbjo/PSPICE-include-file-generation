@@ -1,0 +1,1 @@
+K12_1  L_Kmag33_12metA_1_KmClF1_L1  L_Kmag33_12metA_1_Ls12_c1  {Kms12}
