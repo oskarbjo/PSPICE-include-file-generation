@@ -5,7 +5,7 @@ import numpy as np
 def main():
     
     #Create parameter file 1
-    path = r'C:\Users\objorkqv\cernbox\Documents\Python\MKI workspace\Field adder/'
+    path = r'./'
     fileName='MKIcool_pspice_param.inc'
     fullPath = path + fileName
     sourceFile = r"V:\LIBRARY\PSpice-inc\Coupling_Params_2x12stripes.inc"
@@ -14,13 +14,13 @@ def main():
 
     #Create coupling file for coupling from shunt inductor to beam screen
     couplingStatements = writeCouplingStatements()
-    fileName2 = r'C:\Users\objorkqv\cernbox\Documents\Python\MKI workspace\Field adder/MKIcool_pspice_couplingStatements.inc'
+    fileName2 = r'./MKIcool_pspice_couplingStatements.inc'
     writeCouplingStatementsToFile(fileName2,couplingStatements)
     
     #Create coupling file for coupling from HV conductor to beam screen
     spiralScreen = False
     couplingStatements2 = writeCouplingStatements2(spiralScreen)
-    fileName3 = r'C:\Users\objorkqv\cernbox\Documents\Python\MKI workspace\Field adder/MKI_pspice_couplingStatements_HV_to_screen.inc'
+    fileName3 = r'./MKI_pspice_couplingStatements_HV_to_screen.inc'
     writeCouplingStatementsToFile(fileName3,couplingStatements2)
     
     
